@@ -2,7 +2,7 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const mongoose = require('mongoose')
 
-require('/congif/mongoose')
+require('./congif/mongoose')
 
 const app = express()
 const PORT = 3000
