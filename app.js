@@ -2,14 +2,14 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const mongoose = require('mongoose')
 
-require('./congif/mongoose')
+require('./config/mongoose')
 
 const app = express()
 const PORT = 3000
 
 app.use(express.urlencoded({ extended: true }))
 
-app.engine('hbs', exphbs({ extname: '.hbs', defaultLayout: 'main' }))
+app.engine('hbs', exphbs.engine({ extname: '.hbs', defaultLayout: 'main' }))
 app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
