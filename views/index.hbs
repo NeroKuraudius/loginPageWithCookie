@@ -1,6 +1,9 @@
 {{#if user}}
 <div>
   <h1 class="login m-5" style="text-align: center;">Welcome to back! {{user.firstName}}</h1>
+  <div style="text-align: center"><img src="{{user.profile}}" style="height:15rem;width:12rem;border-radius: 25%;">
+  </div>
+
 </div>
 {{else}}
 <div class="container mt-5"
